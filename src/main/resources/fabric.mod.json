@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "towerheroesgear",
+	"version": "${version}",
+	"name": "Tower Heroes Gear",
+	"description": "This mod adds weapons, armor, and other equipment based off the game Tower Heroes on Roblox.",
+	"authors": [
+		"The_Godbodor"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/towerheroesgear/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thegodbodor.towerheroesgear.TowerHeroesGear"
+		],
+		"client": [
+			"net.thegodbodor.towerheroesgear.TowerHeroesGearClient"
+		],
+		"fabric-datagen": [
+			"net.thegodbodor.towerheroesgear.TowerHeroesGearDataGenerator"
+		]
+	},
+	"mixins": [
+		"towerheroesgear.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
