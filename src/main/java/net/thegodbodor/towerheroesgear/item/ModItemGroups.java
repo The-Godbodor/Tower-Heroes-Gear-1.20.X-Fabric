@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.thegodbodor.towerheroesgear.TowerHeroesGear;
+import net.thegodbodor.towerheroesgear.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup TOWER_HERO_GEAR = Registry.register(Registries.ITEM_GROUP,

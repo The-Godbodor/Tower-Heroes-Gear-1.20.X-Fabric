@@ -5,14 +5,20 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.thegodbodor.towerheroesgear.TowerHeroesGear;
 
+
 public class ModItems {
-    public static final Item MANA = registerItem("mana", new Item(new FabricItemSettings()));
-    public static final Item CORNDOG = registerItem("corndog", new Item(new FabricItemSettings()));
+    //add new items below here
+    public static final Item MANA = registerItem("mana",
+            new Item(new FabricItemSettings()));
+
+    public static final Item CORNDOG = registerItem("corndog",
+            new SwordItem(ModToolMaterial.MANA, 1, -3f, new FabricItemSettings()));
 
     //add new items below here to add to existing groups
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

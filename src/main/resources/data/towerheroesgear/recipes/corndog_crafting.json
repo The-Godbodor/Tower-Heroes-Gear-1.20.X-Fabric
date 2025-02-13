@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "xyx",
+    "xyx",
+    "wzw"
+  ],
+  "key": {
+    "w": {
+      "item": "towerheroesgear:mana"
+    },
+    "x": {
+      "item": "minecraft:wheat"
+    },
+    "y": {
+      "item": "minecraft:porkchop"
+    },
+    "z": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "towerheroesgear:corndog"
+  }
+}
