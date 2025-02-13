@@ -2,6 +2,8 @@ package net.thegodbodor.towerheroesgear;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.thegodbodor.towerheroesgear.item.ModItemGroups;
+import net.thegodbodor.towerheroesgear.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,5 +14,8 @@ public class TowerHeroesGear implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }
